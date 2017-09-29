@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2017-08-28" view-index="0" gantt-divider-location="691" resource-divider-location="300" version="2.8.5" locale="it_CH">
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2017-08-21" view-index="0" gantt-divider-location="691" resource-divider-location="300" version="2.8.5" locale="it">
     <description/>
-    <view zooming-state="default:4" id="gantt-chart">
+    <view zooming-state="default:0" id="gantt-chart">
         <field id="tpd3" name="Nome" width="297" order="0"/>
         <field id="tpd4" name="Data d'inizio" width="195" order="1"/>
         <field id="tpd5" name="Data di fine" width="195" order="2"/>
@@ -14,7 +14,7 @@
         <day-types>
             <day-type id="0"/>
             <day-type id="1"/>
-            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <default-week id="1" name="default" sun="1" mon="1" tue="1" wed="1" thu="1" fri="0" sat="1"/>
             <only-show-weekends value="false"/>
             <overriden-day-types/>
             <days/>
@@ -34,29 +34,47 @@
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
         <task id="18" name="Inizio del progetto" meeting="false" start="2017-09-01" duration="1" complete="0" expand="true"/>
-        <task id="21" name="Informarsi" meeting="false" start="2017-09-01" duration="6" complete="0" expand="true">
-            <task id="10" name="Domande al cliente" meeting="false" start="2017-09-01" duration="1" complete="0" expand="true"/>
-            <task id="9" name="Risposta da parte del cliente" meeting="false" start="2017-09-08" duration="1" complete="0" expand="true"/>
+        <task id="28" name="Analisi" meeting="false" start="2017-09-01" duration="3" complete="0" expand="true">
+            <task id="10" name="Intervista con il cliente" color="#8cb6ce" meeting="true" start="2017-09-01" duration="0" complete="0" expand="true">
+                <depend id="30" type="2" difference="0" hardness="Rubber"/>
+            </task>
+            <task id="30" name="risoluzione dei dubbi" color="#8cb6ce" meeting="false" start="2017-09-01" duration="1" complete="0" expand="true"/>
+            <task id="37" name="Anailsi del dominio" meeting="false" start="2017-09-08" duration="1" complete="0" expand="true"/>
+            <task id="38" name="Analisi dei requisiti" meeting="false" start="2017-09-08" duration="1" complete="0" expand="true">
+                <depend id="11" type="2" difference="0" hardness="Rubber"/>
+            </task>
+            <task id="11" name="Documento di specifica" color="#8cb6ce" meeting="false" start="2017-09-15" duration="1" complete="0" expand="true"/>
         </task>
-        <task id="28" name="Analisi" meeting="false" start="2017-09-15" duration="1" complete="0" expand="true">
-            <task id="11" name="Parte di analisi della documentazione" meeting="false" start="2017-09-15" duration="1" complete="0" expand="true"/>
+        <task id="26" name="Pianificazione e progettazione" meeting="false" start="2017-09-22" duration="2" complete="0" expand="true">
+            <task id="27" name="Creare il gantt del progetto" meeting="false" start="2017-09-22" duration="2" complete="0" expand="true"/>
+            <task id="35" name="Creare i vari mockups" meeting="false" start="2017-09-22" duration="1" complete="0" expand="true">
+                <depend id="41" type="2" difference="0" hardness="Rubber"/>
+            </task>
+            <task id="41" name="Riunione con il cliente" color="#8cb6ce" meeting="true" start="2017-09-29" duration="0" complete="0" expand="true"/>
         </task>
-        <task id="26" name="Pianificazione e progettazione" meeting="false" start="2017-09-22" duration="6" complete="0" expand="true">
-            <task id="13" name="Parte di pianificazione della documentazione" meeting="false" start="2017-09-22" duration="1" complete="0" expand="true"/>
-            <task id="27" name="Creare il gantt del progetto" meeting="false" start="2017-09-22" duration="1" complete="0" expand="true"/>
-            <task id="12" name="Parte di progettazione della documentazione" meeting="false" start="2017-09-22" duration="6" complete="0" expand="true"/>
-        </task>
-        <task id="24" name="Implementazione" meeting="false" start="2017-09-29" duration="16" complete="0" expand="true">
-            <task id="19" name="Parte di sviluppazione della documentazione" meeting="false" start="2017-09-29" duration="16" complete="0" expand="true"/>
-            <task id="0" name="Creare un ambiente di sviluppo" meeting="false" start="2017-09-29" duration="1" complete="0" expand="true"/>
-            <task id="2" name="Creare un sito web" color="#8cb6ce" meeting="false" start="2017-09-29" duration="1" complete="0" priority="4" expand="true"/>
-            <task id="5" name="Creare un form di inserimento con i vari campi" meeting="false" start="2017-10-06" duration="1" complete="0" expand="true"/>
-            <task id="14" name="Sviluppare il form di inserimento dati" meeting="false" start="2017-10-06" duration="6" complete="0" expand="true"/>
-            <task id="15" name="Sviluppare il salvataggio dati in un file XML o CSV" meeting="false" start="2017-10-20" duration="1" complete="0" expand="true"/>
-        </task>
-        <task id="25" name="Test" meeting="false" start="2017-10-20" duration="1" complete="0" expand="true">
-            <task id="16" name="Test del programma" meeting="false" start="2017-10-20" duration="1" complete="0" expand="true"/>
-            <task id="20" name="Parte di test della documentazione" meeting="false" start="2017-10-20" duration="1" complete="0" expand="true"/>
+        <task id="24" name="Implementazione" meeting="false" start="2017-09-29" duration="5" complete="0" expand="true">
+            <task id="0" name="Creare un ambiente di sviluppo" meeting="false" start="2017-09-29" duration="1" complete="0" expand="true">
+                <depend id="2" type="2" difference="0" hardness="Rubber"/>
+                <task id="47" name="Installare S.O" meeting="false" start="2017-09-29" duration="1" complete="0" expand="true"/>
+                <task id="48" name="Installare Apache" meeting="false" start="2017-09-29" duration="1" complete="0" expand="true"/>
+                <task id="49" name="Installare PHP" meeting="false" start="2017-09-29" duration="1" complete="0" expand="true"/>
+                <task id="63" name="Test del server" meeting="false" start="2017-09-29" duration="1" complete="0" expand="true"/>
+            </task>
+            <task id="2" name="Creare un sito web" color="#8cb6ce" meeting="false" start="2017-10-06" duration="1" complete="0" priority="4" expand="true"/>
+            <task id="5" name="Creare un form di inserimento con i vari campi" color="#8cb6ce" meeting="false" start="2017-10-06" duration="1" complete="0" expand="true">
+                <depend id="14" type="2" difference="0" hardness="Rubber"/>
+                <task id="51" name="In base ai mockups" meeting="false" start="2017-10-06" duration="1" complete="0" expand="true"/>
+                <task id="52" name="Miglioramento stile del form" meeting="false" start="2017-10-06" duration="1" complete="0" expand="true"/>
+            </task>
+            <task id="14" name="Sviluppare il form di inserimento dati" color="#8cb6ce" meeting="false" start="2017-10-13" duration="2" complete="0" expand="true">
+                <task id="53" name="Controllo dei dati inseriti" meeting="false" start="2017-10-13" duration="2" complete="0" expand="true"/>
+                <task id="58" name="Test di performance" meeting="false" start="2017-10-20" duration="1" complete="0" expand="true"/>
+            </task>
+            <task id="15" name="Sviluppare il salvataggio dati in un file XML o CSV" color="#8cb6ce" meeting="false" start="2017-10-20" duration="1" complete="0" expand="true">
+                <task id="57" name="Raccolta dati" meeting="false" start="2017-10-20" duration="1" complete="0" expand="true"/>
+                <task id="59" name="Test di scrittura nel file" meeting="false" start="2017-10-20" duration="1" complete="0" expand="true"/>
+            </task>
+            <task id="61" name="Caricamento su Infomaniak" meeting="false" start="2017-10-27" duration="1" complete="0" expand="true"/>
         </task>
         <task id="17" name="Consegna del progetto" meeting="false" start="2017-10-27" duration="1" complete="0" expand="true"/>
     </tasks>
