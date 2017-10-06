@@ -60,14 +60,14 @@
                 <task id="49" name="Installare PHP" meeting="false" start="2017-09-29" duration="1" complete="0" expand="true"/>
                 <task id="63" name="Test del server" meeting="false" start="2017-09-29" duration="1" complete="0" expand="true"/>
             </task>
-            <task id="2" name="Creare un sito web" color="#8cb6ce" meeting="false" start="2017-10-06" duration="1" complete="0" priority="4" expand="true"/>
-            <task id="5" name="Creare un form di inserimento con i vari campi" color="#8cb6ce" meeting="false" start="2017-10-06" duration="1" complete="0" expand="true">
+            <task id="2" name="Creare il sito web" color="#8cb6ce" meeting="false" start="2017-10-06" duration="1" complete="0" priority="4" expand="true"/>
+            <task id="5" name="Creare il form di inserimento con i vari campi" color="#8cb6ce" meeting="false" start="2017-10-06" duration="1" complete="0" expand="true">
                 <depend id="14" type="2" difference="0" hardness="Rubber"/>
                 <task id="51" name="In base ai mockups" meeting="false" start="2017-10-06" duration="1" complete="0" expand="true"/>
                 <task id="52" name="Miglioramento stile del form" meeting="false" start="2017-10-06" duration="1" complete="0" expand="true"/>
             </task>
             <task id="14" name="Sviluppare il form di inserimento dati" color="#8cb6ce" meeting="false" start="2017-10-13" duration="2" complete="0" expand="true">
-                <task id="53" name="Controllo dei dati inseriti" meeting="false" start="2017-10-13" duration="2" complete="0" expand="true"/>
+                <task id="53" name="Validazione dei dati inseriti" meeting="false" start="2017-10-13" duration="2" complete="0" expand="true"/>
                 <task id="58" name="Test di performance" meeting="false" start="2017-10-20" duration="1" complete="0" expand="true"/>
             </task>
             <task id="15" name="Sviluppare il salvataggio dati in un file XML o CSV" color="#8cb6ce" meeting="false" start="2017-10-20" duration="1" complete="0" expand="true">
